@@ -1,0 +1,10 @@
+@import "variabels";
+// The arrow for scrolling between sections.
+%arrow {
+    position: absolute;
+    padding: $gutter-default 0;
+    bottom: 0;
+    left: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}

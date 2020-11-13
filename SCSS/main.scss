@@ -1,0 +1,9 @@
+// mixins, extends and variables
+@import "Utilities/variabels";
+@import "Utilities/mixins";
+@import "Utilities/reset";
+@import "Utilities/extends";
+// Layouts
+@import "Layouts/mainContent";
+@import "layouts/navigation";
+@import "Layouts/footer";

@@ -1,0 +1,43 @@
+@import "../Utilities/variabels";
+// Positioning and styling for the contact/footer section.
+.contact-section {
+  color: $main-font-color;
+  background-color: $contact-bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 60px;
+  @include desktops {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: $gutter-default 0;
+  }
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    font-size: $contact-font-size;
+    padding: $gutter-default;
+    line-height: 1.8em;
+    @include desktops {
+      font-size: $nav-font-size;
+    }
+    ul {
+      list-style-type: none;
+    }
+    a {
+      color: $main-font-color;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    // Styling of icons.
+    [class^="fa"] {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      margin-right: 20px;
+    }
+  }
+}

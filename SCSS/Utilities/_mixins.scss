@@ -1,0 +1,30 @@
+@import "variabels";
+// Transform with vendor prefixes.
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+  -moz-transform: $property;
+  transform: $property;
+}
+
+// The teams quotes container.
+@mixin team-member-mall {
+  padding: 30px;
+  margin-bottom: $teams-margin;
+  width: 80%;
+  background-color: $about-bg-color;
+  border-radius: 5px;
+  font-size: $about-font-size;
+  font-weight: 400;
+  @include desktops {
+    width: 70%;
+  }
+}
+
+// Media query for tablets and desktops.
+@mixin desktops {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
